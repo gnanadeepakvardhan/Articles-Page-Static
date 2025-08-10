@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="articlesPage" class="page">
+        <div class="articles-container">
+            <h1 class="articles-heading">Articles</h1>
+            <div class="categories-grid">
+                <div class="category-card" onclick="showPage('technologyPage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-icon-img.png" class="category-icon" alt="Technology">
+                    <h3 class="category-title">Technology</h3>
+                </div>
+                
+                <div class="category-card" onclick="showPage('sciencePage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-science-icon-img.png" class="category-icon" alt="Science">
+                    <h3 class="category-title">Science</h3>
+                </div>
+                
+                <div class="category-card" onclick="showPage('healthcarePage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-icon-img.png" class="category-icon" alt="Health Care">
+                    <h3 class="category-title">Health Care</h3>
+                </div>
+                
+                <div class="category-card" onclick="showPage('businessPage')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-business-icon-img.png" class="category-icon" alt="Business">
+                    <h3 class="category-title">Business</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="technologyPage" class="page" style="display: none;">
+        <div class="category-page-container">
+            <div class="category-header">
+                <button class="back-btn" onclick="showPage('articlesPage')">← Back</button>
+                <h1 class="category-page-heading">Technology</h1>
+            </div>
+            <div class="carousel-container">
+                <div id="technologyCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c1-img.png" class="carousel-image" alt="Technology Article 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c2-img.png" class="carousel-image" alt="Technology Article 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c3-img.png" class="carousel-image" alt="Technology Article 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#technologyCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#technologyCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sciencePage" class="page" style="display: none;">
+        <div class="category-page-container">
+            <div class="category-header">
+                <button class="back-btn" onclick="showPage('articlesPage')">← Back</button>
+                <h1 class="category-page-heading">Science</h1>
+            </div>
+            <div class="carousel-container">
+                <div id="scienceCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c1-img.png" class="carousel-image" alt="Science Article 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c2-img.png" class="carousel-image" alt="Science Article 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c3-img.png" class="carousel-image" alt="Science Article 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#scienceCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#scienceCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="healthcarePage" class="page" style="display: none;">
+        <div class="category-page-container">
+            <div class="category-header">
+                <button class="back-btn" onclick="showPage('articlesPage')">← Back</button>
+                <h1 class="category-page-heading">Health Care</h1>
+            </div>
+            <div class="carousel-container">
+                <div id="healthcareCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c1-img.png" class="carousel-image" alt="Health Care Article 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c2-img.png" class="carousel-image" alt="Health Care Article 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c3-img.png" class="carousel-image" alt="Health Care Article 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#healthcareCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#healthcareCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="businessPage" class="page" style="display: none;">
+        <div class="category-page-container">
+            <div class="category-header">
+                <button class="back-btn" onclick="showPage('articlesPage')">← Back</button>
+                <h1 class="category-page-heading">Business</h1>
+            </div>
+            <div class="carousel-container">
+                <div id="businessCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c1-img.png" class="carousel-image" alt="Business Article 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c2-img.png" class="carousel-image" alt="Business Article 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c3-img.png" class="carousel-image" alt="Business Article 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#businessCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#businessCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
